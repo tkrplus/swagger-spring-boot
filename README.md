@@ -51,6 +51,23 @@ SwaggerのJavaConfigを作成するだけで Swagger が有効になりました
 下記のリンクで、Swaggerで作成されたAPI仕様書が確認できます。
 http://localhost:8080/swagger-ui.html
 
+### Step.3 API仕様書としての基本情報を設定する
+
+API仕様書として必要な基本情報を設定します。
+
+Step.2で作成した`SwaggerConfig.java`で基本情報を追加します。追加する情報は下記です。
+
+- groupName: APIごとにグルーピングする場合は名前をつけます。（例：internal, public）
+- title: API仕様書のタイトル
+- description: APIに関する説明書
+- version: APIのバージョン
+
+API仕様書のタイトルや説明書は、編集しやすさを考えて`application.yaml`で指定された値を参照する形にしました。
+
+次に、API仕様書に載せるAPIのpathを指定します。
+Step.2までのAPI仕様書ではSpringBootがデフォルトで用意されているAPIも反映されてしまっていました。
+今回は`/api`配下のAPIを対象とします。
+
 
 ## 環境情報
 
