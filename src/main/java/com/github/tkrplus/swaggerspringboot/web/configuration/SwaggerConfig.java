@@ -32,7 +32,8 @@ public class SwaggerConfig {
         .apiInfo(apiInfo())
         .select()
         .paths(paths())
-        .build();
+        .build()
+        .enableUrlTemplating(true);
   }
 
   private ApiInfo apiInfo() {
