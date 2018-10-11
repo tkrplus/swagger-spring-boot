@@ -32,6 +32,25 @@ Swaggerを適用させる前に、サンプル用の簡単なAPIを作成しま�
 - /api/sample/{id} PUT 登録・更新API
 - /api/sample/{id} DELETE 削除API
 
+### Step.2 Swagger Configの作成
+
+SpringでSwaggerを使用するために、 `SpringFox`を使用します。
+
+SpringFoxはSpringプロジェクトの内の１つで、API仕様書を自動で生成してくれるライブラリです。
+SpringFoxは実行時に、自動でアプリケーションをスキャンしてAPIの仕様を推論します。
+
+導入した `SpringFox` ライブラリとバージョンは下記の通り。（2018/10/11現在の最新バージョン）
+
+- io.springfox:springfox-swagger2:2.9.2
+- io.springfox:springfox-swagger-ui:2.9.2
+
+次にSwaggerを有効にするためのJavaConfigを作成します。
+このStepで設定する内容は最小限のものに留めています。
+
+SwaggerのJavaConfigを作成するだけで Swagger が有効になりました。
+下記のリンクで、Swaggerで作成されたAPI仕様書が確認できます。
+http://localhost:8080/swagger-ui.html
+
 
 ## 環境情報
 
