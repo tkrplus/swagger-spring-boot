@@ -90,6 +90,18 @@ API毎の情報を記載していきます。
 
 （モデルが異なっていてもモデル名に同じ名前を設定してしまうと、Swaggerでの表示が変になってしまうバグがあるようです。注意してください。）
 
+### Step.X Docker imageを作成する
+
+作成したアプリケーションでDocker imageを作ります。
+下記のSpring公式のDocker image作成手順で行います。
+https://spring.io/guides/gs/spring-boot-docker/
+
+`build.gradle`の編集と`Dockerfile`の作成が終わったら、下記コマンドでDocker imageが作成できます。
+
+```
+./gradlew build docker
+```
+
 ## 環境情報
 
 - OS: `macOS Sierra 10.12.6`
