@@ -1,0 +1,21 @@
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: swagger-spring-boot
+  labels:
+    app: swagger-spring-boot
+spec:
+  replicas: 1 # レプリケーションの増減数
+  selector:
+    matchLabels:
+      app: swagger-spring-boot
+  template:
+    metadata:
+      labels:
+        app: swagger-spring-boot
+    spec:
+      containers:
+      - name: swagger-spring-boot
+        image: asia.gcr.io/${PROJECT_NAME}/swagger-spring-boot:${CIRCLE_SHA1}
+        ports:
+        - containerPort: 8080
