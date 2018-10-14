@@ -23,6 +23,7 @@ jobs:
       - run:
           name: Install dependencies
           command: |
+            apk --no-cache --update add gettext
             gcloud components install kubectl
       - run:
           name: Install Docker client
