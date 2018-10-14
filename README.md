@@ -4,6 +4,8 @@ Spring Boot 2.x系での Swagger のサンプルです。
 
 Spring Bootの最小構成から段階を踏みながらSwaggerの設定をしていきます。
 
+http://35.221.79.113/swagger-ui.html
+
 ## 手順
 
 ### Step.0 Spring Initializr
