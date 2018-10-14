@@ -1,4 +1,5 @@
 # Swagger x Spring Boot サンプル
+[![CircleCI](https://circleci.com/gh/tkrplus/swagger-spring-boot.svg?style=svg)](https://circleci.com/gh/tkrplus/swagger-spring-boot)
 
 Spring Boot 2.x系での Swagger のサンプルです。
 
