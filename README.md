@@ -93,17 +93,12 @@ API毎の情報を記載していきます。
 
 （モデルが異なっていてもモデル名に同じ名前を設定してしまうと、Swaggerでの表示が変になってしまうバグがあるようです。注意してください。）
 
-### Step.X Docker imageを作成する
+## 番外：本サンプルアプリの公開フロー
 
-作成したアプリケーションでDocker imageを作ります。
-下記のSpring公式のDocker image作成手順で行います。
-https://spring.io/guides/gs/spring-boot-docker/
+本サンプルアプリケーションは`master`ブランチへのマージと同時に、自動で公開されるようにしています。
+具体的な公開フローは下記の図の通りです。
 
-`build.gradle`の編集と`Dockerfile`の作成が終わったら、下記コマンドでDocker imageが作成できます。
-
-```
-./gradlew build docker
-```
+![公開フロー](https://raw.githubusercontent.com/tkrplus/swagger-spring-boot/images/deploy_flow.png "公開フロー")
 
 ## 環境情報
 
